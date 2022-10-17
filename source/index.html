@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team 3 - Interactive Mockup</title>
+    <script src="../js/main.js" async></script>
+    <script src="../js/utils.js" async></script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <p id="section" class="selected">Timer</p>
+      <p id="section" class="regular">Stopwatch</p>
+    </div>
+
+    <div id="watch" class="watch">
+      <div class="timer">
+        <div class="outter-circle">
+          <div class="inner-circle">
+            <span class="countdown" id="hour">00 :</span>
+            <span class="countdown" id="minute">&nbsp;00 :</span>
+            <span class="countdown" id="seconds">&nbsp;00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div id="input-time" class="input-time">
+        <label class="input-time_item" for="minute">Time</label>
+        <input
+          id="input-time-time"
+          class="input-time_item"
+          type="text"
+          id="clock-time"
+          name="clock-time"
+          required
+          minlength="1"
+          maxlength="10"
+          size="10"
+        />
+        <select id="input-time-type" class="input-time_item" name="clock-type" id="clock-type">
+          <option value="s">seconds</option>
+          <option value="m">minutes</option>
+          <option value="h">hours</option>
+        </select>
+      </div>
+      <div id="start" class="start">
+        <p id="start-timer" class="">Start/Stop</p>
+        <p id="start-stopwatch" class="hidden">Start/Stop</p>
+      </div>
+      <div id="extra" class="extra_timer">
+        <span id="extra-btn" class="button" value="3600">+1 hour</span>
+        <span id="extra-btn" class="button" value="1800">+30 min</span>
+        <span id="extra-btn" class="button" value="30">+30 sec</span>
+      </div>
+    </div>
+
+    <div id="results" class="results_timer">
+      <span>When the timer ends</span> <span class="extra_size">></span>
+    </div>
+  </body>
+</html>

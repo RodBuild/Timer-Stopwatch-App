@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.top {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.top .regular {
+  /* width: 25vw; */
+  /* height: 5vh; */
+  color: gray;
+  border: 2px solid gray;
+  padding: 5px 15px;
+  border-radius: 25px;
+  opacity: 50%;
+}
+.top .selected {
+  color: black;
+  border: 2px solid black;
+  padding: 5px 15px;
+  border-radius: 25px;
+}
+
+.watch .timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.watch .timer .outter-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(9, 153, 9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.watch .timer .inner-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.watch .timer .inner-circle .countdown {
+  color: black;
+  font-size: 45px;
+}
+
+.watch .stopwatch {
+  position: relative;
+  text-align: center;
+}
+.watch .stopwatch img {
+  width: 300px;
+  height: 300px;
+  opacity: 25%;
+}
+.watch .stopwatch .inner {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  width: 100%;
+}
+
+/* Controls */
+.controls div {
+  margin: 30px 0px;
+}
+.controls .input-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controls .input-time .input-time_item {
+  margin: 0px 10px;
+  font-size: 1rem;
+}
+
+.controls .start {
+  margin: auto;
+  width: 75%;
+  /* border: 2px solid black; */
+}
+.controls .start p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(226, 77, 102, 0.85);
+  padding: 10px 0px;
+  border: 2px solid rgba(226, 77, 102, 0.1);
+  border-radius: 25px;
+}
+.controls .start p:hover {
+  background-color: rgba(226, 77, 102, 1);
+  border: 2px solid rgba(226, 77, 102, 1);
+}
+/* Timer */
+.controls .extra_timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controls .extra_timer span {
+  margin: 0px 5px;
+}
+/* stopwatch */
+.controls .extra_stopwatch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controls .extra_stopwatch span {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0px 15px;
+}
+
+/*  results */
+.results {
+  /* empty */
+}
+/* FOr timer */
+.results_timer {
+  margin-top: 50px;
+  background-color: rgba(128, 128, 128, 0.192);
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*  For stopwatch */
+.results_stopwatch .laps {
+  list-style: none;
+  color: black;
+}
+.results_stopwatch .laps .lap-item {
+  width: 80%;
+  display: flex;
+  border-bottom: 3px solid black;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+/* Universal Properties */
+.hidden {
+  visibility: hidden;
+}
+.button {
+  color: black;
+  border: 2px solid black;
+  padding: 5px 15px;
+  border-radius: 25px;
+}
+.extra_size {
+  font-size: 40px;
+  line-height: 0;
+}
+.green {
+  border-color: green;
+  color: green;
+}
+.gone {
+    
+}
